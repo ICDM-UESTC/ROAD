@@ -20,19 +20,24 @@ This repo provides an official implementation of ROAD as described in the paper:
 │   ├── modules.py  
 │   ├── MoE.py  
 │   └── ROAD.py  
+├── utils    
+│   ├── data_loader.py  
+│   ├── data_util.py  
+│   └── __init__.py  
 ├── ROAD.yml  
 ├── run.sh  
-├── train.py  
-├── utils    
-|   ├── data_loader.py  
-|   ├── data_util.py  
-|   └── __init__.py  
+├── train.py   
+## Data
+The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and image data for the three datasets can be obtained from [Google Drive](https://drive.google.com/drive/folders/1C1E0lwRdgMlyDevEVB4Ri3-rknBhWnym?usp=drive_link).
 ## Dependency
 You can run this command in the terminal from the project directory to create the required Python environment for the model.  
 ` conda env create -f ROAD.yml -n ROAD `
 ## Train 
-Then the following commands can be used to train and test our Modal.
+Then the following commands can be used to train our Modal.    
+DB15K  
   `nohup bash run.sh > db15k.log 2>&1 &`  
-  `nohup bash run.sh > mkgw.log 2>&1 &`  
+MKG-W  
+  `nohup bash run.sh > mkgw.log 2>&1 &`    
+MKG-Y  
   `nohup bash run.sh > mkgy.log 2>&1 &`  
 
