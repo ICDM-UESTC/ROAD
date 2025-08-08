@@ -1,6 +1,6 @@
 # ROAD: Robust and Adaptive Denoising representation learning Framework for Multi-Modal Knowledge Graph Completion
 ## overview
-![model](./Road_model——01.png)
+![model](./Road.png)
 ## Dependency
 ` conda env create -f ROAD.yml -n ROAD `
 ## Train 
