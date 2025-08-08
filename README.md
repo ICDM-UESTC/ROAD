@@ -28,7 +28,7 @@ This repo provides an official implementation of ROAD as described in the paper:
 |   ├── data_util.py  
 |   └── __init__.py  
 ## Dependency
-You can run this command in the terminal from the project directory to create the required Python environment for the model.
+You can run this command in the terminal from the project directory to create the required Python environment for the model.  
 ` conda env create -f ROAD.yml -n ROAD `
 ## Train 
 Then the following commands can be used to train and test our Modal.
