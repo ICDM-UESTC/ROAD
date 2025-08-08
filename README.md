@@ -2,7 +2,9 @@
 This repo provides an official implementation of ROAD as described in the paper:Robust and Adaptive Denoising representation learning Framework for Multi-Modal Knowledge Graph Completion
 ## overview
 ![model](./Road.png)
-## Code Structure  
+## Code Structure
+
+```
 ├── checkpoint  
 │   ├── DB15K  
 │   ├── MKG-W  
@@ -26,7 +28,8 @@ This repo provides an official implementation of ROAD as described in the paper:
 │   └── __init__.py  
 ├── ROAD.yml  
 ├── run.sh  
-├── train.py   
+├── train.py  
+```
 ## Data
 The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and image data for the three datasets can be obtained from [Google Drive](https://drive.google.com/drive/folders/1C1E0lwRdgMlyDevEVB4Ri3-rknBhWnym?usp=drive_link).
 ## Dependency
