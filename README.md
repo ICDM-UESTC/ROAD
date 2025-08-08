@@ -1,7 +1,5 @@
 # ROAD: Robust and Adaptive Denoising representation learning Framework for Multi-Modal Knowledge Graph Completion  
 This repo provides an official implementation of ROAD as described in the paper:Robust and Adaptive Denoising representation learning Framework for Multi-Modal Knowledge Graph Completion
-## overview
-![model](./Road.png)
 ## Code Structure
 
 ```
