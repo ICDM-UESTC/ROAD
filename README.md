@@ -5,28 +5,6 @@ This repo provides an official implementation of **ROAD** as described in the pa
 # Code Structure
 
 ```
-ROAD  
-├── datasets
-│ ├── DB15K
-│ ├── MKG-W
-│ └── MKG-Y
-├── layers
-│ ├── init.py
-│ └── layer.py
-├── models
-│ ├── init.py
-│ ├── model.py
-│ ├── modules.py
-│ ├── MoE.py
-│ └── ROAD.py
-├── utils
-│ ├── data_loader.py
-│ ├── data_util.py
-│ └── init.py
-├── ROAD.yml
-├── run.sh
-└── train.py
-
 ROAD
 ├─ datasets
 │  ├─ DB15K
@@ -90,5 +68,6 @@ nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset
 ```sh
 nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset MKG-Y --epochs 2000 --beta_s 1e-3 --beta_t 1e-3 --beta_i 1e-3 --lamda_conf 1e-3 --lamda_cl 1e-3  > mkgy.txt
 ```
+
 
  
