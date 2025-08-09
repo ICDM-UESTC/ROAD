@@ -24,7 +24,7 @@ ROAD
 ├── ROAD.yml
 ├── run.sh
 └── train.py
-```
+
 ## Data
 The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and visual data for the three datasets can be obtained from [Google Drive](https://drive.google.com/drive/folders/1C1E0lwRdgMlyDevEVB4Ri3-rknBhWnym?usp=sharing).
 ## Dependency
