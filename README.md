@@ -57,7 +57,7 @@ conda env create -f ROAD.yml -n ROAD
 
 # Train 
 
-Then the following commands can be used to train our Modal.Each command is configured with the hyperparameters that achieved the best performance reported in the paper.     
+Then the following commands can be used to train our modal. Each command is configured with the hyperparameters that achieved the best performance reported in the paper.     
 
 
 **DB15K**
@@ -80,6 +80,7 @@ nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset
 
 
  
+
 
 
 
