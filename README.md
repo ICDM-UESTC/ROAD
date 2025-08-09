@@ -36,9 +36,9 @@ You can run this command in the terminal from the project directory to create th
 ## Train 
 Then the following commands can be used to train our Modal.Each command is configured with the hyperparameters that achieved the best performance reported in the paper.      
 DB15K  
-  `nohup python -u train.py --cuda 0 --lr 0.001 --mu 0.0001 --eval_freq 100 --dim 200 --dataset DB15K --epochs 2000 --alpha_s 1e-5 --alpha_t 1e-5 --alpha_i 1e-5 --alpha_conf 1e-3 --alpha_cl 5e-5  > db15k.txt`  
+  `nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset DB15K --epochs 2000 --alpha_s 1e-5 --alpha_t 1e-5 --alpha_i 1e-5 --alpha_conf 1e-3 --alpha_cl 5e-5  > db15k.txt`  
 MKG-W  
-  `nohup python -u train.py --cuda 0 --lr 0.001 --mu 0.0001 --eval_freq 100 --dim 200 --dataset MKG-W --epochs 2000 --alpha_s 1e-4 --alpha_t 1e-4 --alpha_i 1e-4 --alpha_conf 1e-4 --alpha_cl 1e-4  > mkgw.txt`    
+  `nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset MKG-W --epochs 2000 --alpha_s 1e-4 --alpha_t 1e-4 --alpha_i 1e-4 --alpha_conf 1e-4 --alpha_cl 1e-4  > mkgw.txt`    
 MKG-Y  
-  `nohup python -u train.py --cuda 0 --lr 0.001 --mu 0.0001 --eval_freq 100 --dim 200 --dataset MKG-Y --epochs 2000 --alpha_s 1e-3 --alpha_t 1e-3 --alpha_i 1e-3 --alpha_conf 1e-3 --alpha_cl 1e-3  > mkgy.txt`  
+  `nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset MKG-Y --epochs 2000 --alpha_s 1e-3 --alpha_t 1e-3 --alpha_i 1e-3 --alpha_conf 1e-3 --alpha_cl 1e-3  > mkgy.txt`  
 
