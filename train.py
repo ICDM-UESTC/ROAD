@@ -212,7 +212,9 @@ def train_decoder(args):
     print("\n\n\n\n\n\n")
 
     if args.save:
-        torch.save(model.state_dict(), f'./checkpoint/{args.dataset}/{current_time}/{args.model}.pth')
+        save_dir = f'./checkpoint/{args.dataset}/{current_time}'
+        os.makedirs(save_dir, exist_ok=True) 
+        torch.save(model.state_dict(), os.path.join(save_dir, f'{args.model}.pth'))
         print('Saved model!')
 
 if __name__ == '__main__':
