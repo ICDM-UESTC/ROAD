@@ -158,7 +158,10 @@ def train_decoder(args):
              + F.mse_loss(conf_pred[1], conf_i) \
              + F.mse_loss(conf_pred[2], conf_t) \
              + F.mse_loss(conf_pred[3], conf_mm)
-            lambda_conf_reg = 1e-3
+            if args.dataset == 'DB15K':
+                lambda_conf_reg = 5e-4
+            else:
+                lambda_conf_reg = 1e-3
             conf_reg = 0.0
             for name, param in model.named_parameters():
                 if 'modal_conf' in name and param.requires_grad:
