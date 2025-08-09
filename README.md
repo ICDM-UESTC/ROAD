@@ -50,7 +50,7 @@ conda env create -f ROAD.yml -n ROAD
 ```
 
 ```sh
- conda activate ROAD`
+ conda activate ROAD
 ```
 
 
@@ -80,6 +80,7 @@ nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset
 
 
  
+
 
 
 
