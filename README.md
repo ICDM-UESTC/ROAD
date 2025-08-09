@@ -3,30 +3,27 @@ This repo provides an official implementation of ROAD as described in the paper:
 ## Code Structure
 
 ```
-├── checkpoint  
-│   ├── DB15K  
-│   ├── MKG-W  
-│   └── MKG-Y  
-├── datasets  
-│   ├── DB15K  
-│   ├── MKG-W  
-│   └── MKG-Y  
-├── layers  
-│   ├── __init__.py  
-│   ├── layer.py  
-├── models  
-│   ├── __init__.py  
-│   ├── model.py  
-│   ├── modules.py  
-│   ├── MoE.py  
-│   └── ROAD.py  
-├── utils    
-│   ├── data_loader.py  
-│   ├── data_util.py  
-│   └── __init__.py  
-├── ROAD.yml  
-├── run.sh  
-├── train.py  
+ROAD  
+├── datasets
+│ ├── DB15K
+│ ├── MKG-W
+│ └── MKG-Y
+├── layers
+│ ├── init.py
+│ └── layer.py
+├── models
+│ ├── init.py
+│ ├── model.py
+│ ├── modules.py
+│ ├── MoE.py
+│ └── ROAD.py
+├── utils
+│ ├── data_loader.py
+│ ├── data_util.py
+│ └── init.py
+├── ROAD.yml
+├── run.sh
+└── train.py
 ```
 ## Data
 The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and visual data for the three datasets can be obtained from [Google Drive](https://drive.google.com/drive/folders/1C1E0lwRdgMlyDevEVB4Ri3-rknBhWnym?usp=drive_link).
