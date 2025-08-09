@@ -31,7 +31,16 @@ ROAD
 
 #  Data
 
-The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and visual data for the three datasets can be obtained from [Google Drive](https://drive.google.com/drive/folders/1C1E0lwRdgMlyDevEVB4Ri3-rknBhWnym?usp=sharing).
+The structural data of the knowledge graph has been stored in the datasets/DB15K, datasets/MKG-W, and datasets/MKG-Y directories. The textual and visual data for the three datasets can be obtained from following links.
+## DB15K
+[text_features.pth](https://drive.google.com/uc?export=download&id=1p8_5MMU9JSvwNoUkcE59nkMiysULWWWF)  
+[img_features.pth](https://drive.google.com/uc?export=download&id=1GUQo3IPT2olRtbMaJSBtnT50fT01cogE)  
+## MKG-W  
+[text_features.pth](https://drive.google.com/uc?export=download&id=1itDPa0-IDMLmjT-o3VZ9uGwxGbvE9t7x)  
+[img_features.pth](https://drive.google.com/uc?export=download&id=1pG59gJfabMfPZvehnfbCdJQR85WxByl3)  
+## MKG-Y  
+[text_features.pth](https://drive.google.com/uc?export=download&id=1cxX73cZhCz7FzgqMxJBh7uamibMSf6uh)  
+[img_features.pth](https://drive.google.com/uc?export=download&id=15quf8XLVaJ0VbZkx8QGIFYkvmHWepo_T)  
 
 ## Dependency
 You can run this command in the terminal from the project directory to create the required Python environment for the model.  
@@ -71,5 +80,6 @@ nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset
 
 
  
+
 
 
