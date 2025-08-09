@@ -56,11 +56,11 @@ def parse_args():
         'mu_beta':0.01, 
         'img_dim': 256,
         'txt_dim': 256,
-        'alpha_s':1e-5,
-        'alpha_t':1e-5,
-        'alpha_i':1e-5,
-        'alpha_conf':1e-5,
-        'alpha_cl':1e-5,
+        'beta_s':1e-5,
+        'beta_t':1e-5,
+        'beta_i':1e-5,
+        'lamda_conf':1e-5,
+        'lamda_cl':1e-5,
         'begin': 0,
         'std': 0,
         'stage1_epochs':700
@@ -169,8 +169,8 @@ def train_decoder(args):
             loss_conf = loss_conf_raw + lambda_conf_reg * conf_reg
                     
             loss_bce =  loss_s + loss_i + loss_t + loss_mm 
-            loss_kl = args.alpha_s*loss_kl_s + args.alpha_i * loss_kl_i + args.alpha_t * loss_kl_t 
-            loss = loss_bce + loss_kl + args.alpha_cl * cl_loss + args.alpha_conf * loss_conf
+            loss_kl = args.beta_s*loss_kl_s + args.beta_i * loss_kl_i + args.beta_t * loss_kl_t 
+            loss = loss_bce + loss_kl + args.lamda_cl * cl_loss + args.lamda_conf * loss_conf
 
             loss.backward()
             torch.nn.utils.clip_grad_norm_(parameters=model.parameters(), max_norm=0.5, norm_type=2)
