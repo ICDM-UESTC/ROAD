@@ -1,4 +1,4 @@
-# ROAD: Robust and Adaptive Denoising Representation Learning Framework for Multi-Modal Knowledge Graph Completion  
+# (ROAD)Unveiling Cross-Modal Consistency: Taming Inter- and Intra-Modal Noise for Robust Multi-Modal Knowledge Graph Completion
 
 This repo provides an official implementation of **ROAD** as described in the paper:Robust and Adaptive Denoising representation learning Framework for Multi-Modal Knowledge Graph Completion
 
@@ -80,6 +80,7 @@ nohup python -u train.py --cuda 0 --lr 0.001 --eval_freq 100 --dim 200 --dataset
 
 
  
+
 
 
 
